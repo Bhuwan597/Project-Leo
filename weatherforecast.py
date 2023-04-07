@@ -37,10 +37,10 @@ def weather_forecast(city):
             weather = data['weather'][0].get('description')
             humidity = data['main']['humidity']
             wind_speed = data['wind']['speed']
-            speak(f'Current Temperature of {city} is {temperature}, weather is {weather}, wind speed is {wind_speed}kilometer per hour and humidity is {humidity}.')
+            speak(f'Current Temperature of {city} is {temperature}° C, weather is {weather}, wind speed is {wind_speed}kilometer per hour and humidity is {humidity}.')
             from time import sleep
             sleep(0.5)
-            desktop_notify('Weather Report', f"Temperature: {temperature}\nHumidity: {humidity}\nWind Speed: {wind_speed} km/h\nWeather: {weather}")
+            desktop_notify('Weather Report', f"Temperature: {temperature}° C\nHumidity: {humidity}\nWind Speed: {wind_speed} km/h\nWeather: {weather}")
         else:
             speak('Sorry sir, there was an error to fetch weather related informations.')
     except:

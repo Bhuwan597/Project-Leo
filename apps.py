@@ -25,13 +25,13 @@ def open_apps(query):
                     shorlisted_query+= word
             if website_name != '':
                 pyautogui.press('win')
-                sleep(0.2)
+                sleep(1)
                 pyautogui.write('google chrome')
-                sleep(0.2)
+                sleep(0.5)
                 pyautogui.press('enter')
-                sleep(2)
+                sleep(3)
                 pyautogui.write(shorlisted_query)
-                sleep(0.2)
+                sleep(1)
                 pyautogui.press('enter')
                 break
             else:
@@ -50,13 +50,13 @@ def open_apps(query):
                     shorlisted_query+= word
             if website_name != '':
                 pyautogui.press('win')
-                sleep(0.2)
+                sleep(1)
                 pyautogui.write('edge')
-                sleep(0.2)
+                sleep(0.5)
                 pyautogui.press('enter')
-                sleep(2)
+                sleep(3)
                 pyautogui.write(shorlisted_query)
-                sleep(0.2)
+                sleep(1)
                 pyautogui.press('enter')
                 break
             else:
@@ -67,9 +67,9 @@ def open_apps(query):
         play_on_youtube()
     else:
         pyautogui.press('win')
-        sleep(0.2)
+        sleep(1)
         pyautogui.write(app_name)
-        sleep(0.2)
+        sleep(1)
         pyautogui.press('enter')
         speak(f'Successfully opened {app_name}')
         

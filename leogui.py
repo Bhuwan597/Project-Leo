@@ -15,7 +15,6 @@ class Ui_Leo(object):
     def setupUi(self, Leo):
         Leo.setObjectName("Leo")
         Leo.resize(1366, 768)
-        Leo.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap("Leo GUI/7gQj.gif"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         Leo.setWindowIcon(icon)
@@ -24,44 +23,31 @@ class Ui_Leo(object):
         self.centralwidget = QtWidgets.QWidget(Leo)
         self.centralwidget.setObjectName("centralwidget")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(620, 550, 131, 121))
+        self.label_2.setGeometry(QtCore.QRect(550, 550, 261, 131))
         self.label_2.setText("")
-        self.label_2.setPixmap(QtGui.QPixmap("Leo GUI/fxVE.gif"))
+        self.label_2.setPixmap(QtGui.QPixmap("Leo GUI/recognizing.gif"))
         self.label_2.setScaledContents(True)
         self.label_2.setObjectName("label_2")
-        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(1050, 490, 101, 41))
-        font = QtGui.QFont()
-        font.setFamily("Comic Sans MS")
-        font.setPointSize(-1)
-        font.setBold(True)
-        font.setWeight(75)
-        self.pushButton.setFont(font)
-        self.pushButton.setLayoutDirection(QtCore.Qt.LeftToRight)
-        self.pushButton.setAutoFillBackground(False)
-        self.pushButton.setStyleSheet("color: white;\n"
-"font-size: 22px;\n"
-"font-weight: bold;\n"
-"background-color: rgb(9, 170, 1);\n"
-"padding: 5px;\n"
-"cursor:pointer;")
-        self.pushButton.setObjectName("pushButton")
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_2.setGeometry(QtCore.QRect(1170, 490, 101, 41))
+        self.pushButton_2.setGeometry(QtCore.QRect(1050, 440, 181, 61))
         font = QtGui.QFont()
-        font.setFamily("Comic Sans MS")
+        font.setFamily("tahoma")
         font.setPointSize(-1)
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_2.setFont(font)
         self.pushButton_2.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.pushButton_2.setAutoFillBackground(False)
-        self.pushButton_2.setStyleSheet("color: white;\n"
-"font-size: 22px;\n"
+        self.pushButton_2.setStyleSheet("color: #0096FF;\n"
+"border: 4px solid #ff0000;\n"
+"border-radius:15px;\n"
+"padding: 15px 25px;\n"
+"font-size: 20px;\n"
+"font-family: tahoma;\n"
+"letter-spacing:5px;\n"
+"cursor: pointer;\n"
 "font-weight: bold;\n"
-"padding: 5px;\n"
-"cursor:pointer;\n"
-"background-color: rgb(255, 0, 0);")
+"")
         self.pushButton_2.setObjectName("pushButton_2")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
         self.label_3.setGeometry(QtCore.QRect(970, 200, 331, 211))
@@ -94,9 +80,9 @@ class Ui_Leo(object):
 "border:none;")
         self.textBrowser_3.setObjectName("textBrowser_3")
         self.label_4 = QtWidgets.QLabel(self.centralwidget)
-        self.label_4.setGeometry(QtCore.QRect(70, 170, 371, 311))
+        self.label_4.setGeometry(QtCore.QRect(90, 90, 301, 421))
         self.label_4.setText("")
-        self.label_4.setPixmap(QtGui.QPixmap("Leo GUI/MImN.gif"))
+        self.label_4.setPixmap(QtGui.QPixmap("Leo GUI/robot.gif"))
         self.label_4.setScaledContents(True)
         self.label_4.setObjectName("label_4")
         self.progressBar = QtWidgets.QProgressBar(self.centralwidget)
@@ -143,7 +129,6 @@ class Ui_Leo(object):
 "border:none;")
         self.textEdit.setObjectName("textEdit")
         self.label.raise_()
-        self.pushButton.raise_()
         self.pushButton_2.raise_()
         self.label_4.raise_()
         self.label_2.raise_()
@@ -173,7 +158,6 @@ class Ui_Leo(object):
         _translate = QtCore.QCoreApplication.translate
         Leo.setWindowTitle(_translate("Leo", "Leo | Personal voice assistant - By Bhuwan Acharya "))
         Leo.setToolTip(_translate("Leo", "<html><head/><body><p>Leo - Developed By Bhuwan Acharya</p></body></html>"))
-        self.pushButton.setText(_translate("Leo", "Run Leo"))
         self.pushButton_2.setText(_translate("Leo", "Exit"))
         self.textBrowser.setHtml(_translate("Leo", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"

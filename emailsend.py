@@ -54,7 +54,7 @@ def send_email():
             GLabel_269["fg"] = "#333333"
             GLabel_269["justify"] = "center"
             GLabel_269["text"] = "Type the email address you want to send this email:"
-            GLabel_269.place(x=40,y=30,width=409,height=58)
+            GLabel_269.place(x=40,y=30,width=440,height=58)
             root.mainloop()
             to = entry_value.get()
             sp.start()

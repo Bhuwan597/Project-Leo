@@ -198,3 +198,54 @@ import os
 # yt = pytube.YouTube(link)
 # filename = yt.title
 # yt.streams.filter(res="720p", progressive=True).first().download()
+
+
+# from takecommand import take_command
+
+
+# query = take_command()
+
+# splitted_words = query.split()
+
+# digit = 0
+# for i in splitted_words:
+#     if i.isdigit():
+#         digit = int(i)
+
+# if 'minutes' in query or 'minute' in query:
+#     sleeping_time = digit*60
+# if 'hour' in query or 'hours' in query:
+#     sleeping_time = digit*60*60
+# if 'day' in query or 'days' in query:
+#     sleeping_time = digit*60*60*24
+
+# print(sleeping_time)
+# os.system("TASKKILL /F /IM Microsoft.Photos.exe")
+
+# import cv2
+# import requests
+# import numpy as np
+
+# url = 'http://192.168.1.68:8080/shot.jpg'
+
+# while True:
+#     r = requests.get(url)
+#     img_array = np.array(bytearray(r.content),dtype=np.uint8)
+#     img = cv2.imdecode(img_array,-1)
+#     cv2.imshow('Camera', img)
+#     if cv2.waitKey(1) &0xff == 27:
+#         break
+
+# cv2.destroyAllWindows()
+
+#!/usr/bin/env python3
+
+import cv2
+
+cap = cv2.VideoCapture('http://192.168.1.68:4747/video')
+
+while True:
+    ret, frame = cap.read()
+
+    cv2.imshow("frame", frame)
+    cv2.waitKey(1)
